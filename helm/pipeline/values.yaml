@@ -1,0 +1,20 @@
+app:
+  name: orderst27-app
+  namespace: test2
+  cluster: .apps.cluster-mwqln.mwqln.sandbox2329.opentlc.com
+
+git:
+  branch: main
+  repo: https://github.com/devhub-mad/orderst27-app-backend
+  org: devhub-mad
+  name: orderst27-app-backend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000/test2
+  name: orderst27-app-backend
+  tag: latest
+
+
+pipelineStorage:
+  pvcSize: 2Gi
+  storageClassName: ""
