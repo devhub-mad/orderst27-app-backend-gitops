@@ -80,4 +80,4 @@ spec:
             secretName: {{ .Values.applicationName }}-secret
         - name: {{ .Values.applicationName }}-config-volume
           configMap:
-            name: {{ .Values.applicationName }}-config
+            name: orders-config
